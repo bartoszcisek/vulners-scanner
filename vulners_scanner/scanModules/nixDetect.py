@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 __author__ = 'videns'
-from scanModules.osDetect import ScannerInterface
+from vulners_scanner.scanModules.osDetect import ScannerInterface
 
 
 class nixDetect(ScannerInterface):

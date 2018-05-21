@@ -34,7 +34,7 @@ class scannerEngine():
         members = set()
         for modPath, modName, isPkg in pkgutil.iter_modules(scanModules.__path__):
             #find all classed inherited from scanner.osDetect.ScannerInterface in all files
-            members = members.union(inspect.getmembers(__import__('%s.%s' % ('scanModules',modName), fromlist=['scanModules']),
+            members = members.union(inspect.getmembers(__import__('%s.%s' % ('vulners_scanner.scanModules',modName), fromlist=['scanModules']),
                                          lambda member:inspect.isclass(member)
                                                        and issubclass(member, scanModules.osDetect.ScannerInterface)
                                                        and member.__module__ == '%s.%s' % ('scanModules',modName)

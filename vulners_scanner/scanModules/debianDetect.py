@@ -2,7 +2,7 @@
 __author__ = 'videns'
 import re
 
-from scanModules.linuxDetect import linuxDetect
+from vulners_scanner.scanModules.linuxDetect import linuxDetect
 
 
 class debBasedDetect(linuxDetect):
