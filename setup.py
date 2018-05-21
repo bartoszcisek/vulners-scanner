@@ -13,6 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/videns/vulners-scanner",
     packages=setuptools.find_packages(),
+    scripts=['vulners_scanner/linuxScanner.py', 'vulners_scanner/lazyScanner.py'],
     classifiers=(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

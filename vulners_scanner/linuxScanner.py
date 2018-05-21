@@ -9,7 +9,7 @@ try:
     import urllib.request as urllib2
 except ImportError:
     import urllib2
-import scanModules
+import vulners_scanner.scanModules
 
 
 VULNERS_LINKS = {'pkgChecker':'https://vulners.com/api/v3/audit/audit/',
